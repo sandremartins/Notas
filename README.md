@@ -16,3 +16,7 @@ O aplicativo listará frases na tela inicial.
   .toolbar modifier
   .onMove e .onDelete
   
+3 - Fundamento para integar o App ao Firebase
+    O aplicativo vai criar, ler e armazenar informações de banco de dados Firebase
+    Adicionar SDK do Firebase usando Cocoapods
+    
