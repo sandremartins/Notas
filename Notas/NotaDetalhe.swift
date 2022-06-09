@@ -8,18 +8,21 @@
 import SwiftUI
 
 struct NotaDetalhe: View {
-    @Binding var nota: Nota
+    var nota: Nota
+//    @ObservableObject var notasFactory = testFactory
+    @StateObject var notasFactory = testFactory
     
     var body: some View {
+        let notaIdx = notasFactory.index(of: nota)
         VStack {
-            Text(nota.notaText)
+            Text(notasFactory.notas[notaIdx].notaText)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal)
-            Image(systemName: nota.liked ? "heart.fill" : "heart")
+            Image(systemName: notasFactory.notas[notaIdx].liked ? "heart.fill" : "heart")
                 .foregroundColor(.red)
                 .padding(.all)
                 .onTapGesture {
-                    nota.liked.toggle()
+                    notasFactory.notas[notaIdx].liked.toggle()
                 }
         }
         .font(.largeTitle)
@@ -28,6 +31,6 @@ struct NotaDetalhe: View {
 
 struct NotaDetalhe_Previews: PreviewProvider {
     static var previews: some View {
-        NotaDetalhe(nota: .constant(testData[0]))
+        NotaDetalhe(nota: testFactory.notas[0])
     }
 }

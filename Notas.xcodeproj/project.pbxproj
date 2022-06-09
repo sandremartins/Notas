@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26D1025928522A3400157B12 /* NotasFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D1025828522A3400157B12 /* NotasFactory.swift */; };
 		26EC02A828513B60004141E5 /* NotasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EC02A728513B60004141E5 /* NotasApp.swift */; };
 		26EC02AA28513B60004141E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EC02A928513B60004141E5 /* ContentView.swift */; };
 		26EC02AC28513B62004141E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26EC02AB28513B62004141E5 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26D1025828522A3400157B12 /* NotasFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotasFactory.swift; sourceTree = "<group>"; };
 		26EC02A428513B60004141E5 /* Notas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26EC02A728513B60004141E5 /* NotasApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotasApp.swift; sourceTree = "<group>"; };
 		26EC02A928513B60004141E5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 				26EC02A728513B60004141E5 /* NotasApp.swift */,
 				26EC02A928513B60004141E5 /* ContentView.swift */,
 				26EC02B72851472B004141E5 /* Nota.swift */,
+				26D1025828522A3400157B12 /* NotasFactory.swift */,
 				26EC02B5285144FA004141E5 /* NotaDetalhe.swift */,
 				26EC02AB28513B62004141E5 /* Assets.xcassets */,
 				26EC02AD28513B62004141E5 /* Preview Content */,
@@ -145,6 +148,7 @@
 			files = (
 				26EC02AA28513B60004141E5 /* ContentView.swift in Sources */,
 				26EC02A828513B60004141E5 /* NotasApp.swift in Sources */,
+				26D1025928522A3400157B12 /* NotasFactory.swift in Sources */,
 				26EC02B6285144FA004141E5 /* NotaDetalhe.swift in Sources */,
 				26EC02B82851472B004141E5 /* Nota.swift in Sources */,
 			);
